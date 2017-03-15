@@ -15,14 +15,14 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<style>
      table, th, td {
-    border: 1px solid black;
-    padding: 5px;}
-    tr{
-	align: center;
-	}
-     table {
-    border-spacing: 0px;
-    }
+	    border: 1px solid black;
+	    padding: 5px;}
+	    tr{
+		align: center;
+		}
+	     table {
+	    border-spacing: 0px;
+	    }
 </style>
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery-migrate-1.2.1.js"></script>
@@ -38,17 +38,6 @@
 				$().UItoTop({ easingType: 'easeOutQuart' });
 			});
 		</script>
-		<!--[if lt IE 8]>
-			<div style=' clear: both; text-align:center; position: relative;'>
-				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-				</a>
-			</div>
-		<![endif]-->
-		<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<link rel="stylesheet" media="screen" href="css/ie.css">
-		<![endif]-->
 	</head>
 	
 	<body class="" id="top">
@@ -80,53 +69,62 @@
 								<br />
 								<br />
                                 <form action="booking.php" method="post">
-								<h3 align="center">USER ID</h3>
-								<?php	echo "<input type=\"text\" align=\"center\" name=\"id\" value=$id >"; ?>
-								<h3 align="center">
-								<div class="tmInput">
-								    
-									<strong>Select Car</strong>
-									<select name="car">
-									<?php 
-										
-										$result = mysqli_query($connection,"SELECT model,id from cars_available WHERE Available='YES'");
-										$row=array();
-										if(!$result){
-										die("Database query failed:".mysql_error());
-							            }
-										
-										while ($row = mysqli_fetch_array($result)){
-										echo "<option value={$row["id"]}>{$row["model"]}</option>";
-										
-										
-										}
-										
+									<h3 align="center">USER ID</h3>
+									<?php	echo "<input type=\"text\" align=\"center\" name=\"id\" value=$id >"; ?>
+									<h3 align="center">
+									<div class="tmInput">
+									    
+										<strong>Select Car</strong>
+										<select name="car">
+										<?php 
+											
+											$result = mysqli_query($connection,"SELECT model,id from cars_available WHERE Available='YES'");
+											$row=array();
+											if(!$result){
+												die("Database query failed:".mysql_error());
+								            }
+											
+											while ($row = mysqli_fetch_array($result)){
+
+												echo "	<option value={$row["id"]}>
+
+															{$row["model"]}
+
+														</option>";
+											}
+											
 										?>
-										</select>
-										</div>
-										<br />
-										<div class="clear"></div>
-								<div class="tmInput">	
-									<strong>Select Driver</strong>
-									<select name="driver">
-									<?php 
-										$result = mysqli_query($connection,"SELECT driver_name,driver_id from driver_available WHERE Available='YES'");
-										$row=array();
-										if(!$result){
-										die("Database query failed:".mysql_error());
-							            }
-										while ($row = mysqli_fetch_array($result)){
-										echo "<option value={$row["driver_id"]}>{$row["driver_name"]}</option>";
-										}
-										?>
-										</select>
-										</div>
-										<br />
-									<div align="center" >
-										<input class="btn" name="Submit" type="Submit" value="Submit">
-									</div>	
-									
-									</h3>
+											</select>
+											</div>
+											<br />
+						<div class="clear"></div>
+									<div class="tmInput">	
+										<strong>Select Driver</strong>
+											<select name="driver">
+
+												<?php 
+													$result = mysqli_query($connection,"SELECT driver_name,driver_id from driver_available 		WHERE Available='YES'");
+													$row=array();
+													if(!$result){
+														die("Database query failed:".mysql_error());
+										            }
+													while ($row = mysqli_fetch_array($result)){
+														echo "	<option value={$row["driver_id"]}>
+
+																	{$row["driver_name"]}
+
+																</option>";
+													}
+												?>
+
+											</select>
+									</div>
+									<br/>
+										<div align="center" >
+											<input class="btn" name="Submit" type="Submit" value="Submit">
+										</div>	
+										
+										</h3>
 						       </form>
 					       </h1>
 						</div>

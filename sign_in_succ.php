@@ -28,7 +28,6 @@
 	  
 	   if(isset($row[1]))
 		{
-			
 			mysqli_query($conn,$query1);
 			mysqli_query($conn,$query2);
 			mysqli_query($conn,$query3);

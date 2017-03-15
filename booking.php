@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php require("php/connection.php")?>
-<?php 
+<? php
+
 	$id = $_POST["id"];
 	$driver = $_POST["driver"];
 	$car= $_POST["car"];

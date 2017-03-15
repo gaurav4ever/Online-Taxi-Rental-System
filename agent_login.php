@@ -36,17 +36,6 @@
 				$().UItoTop({ easingType: 'easeOutQuart' });
 			});
 		</script>
-		<!--[if lt IE 8]>
-			<div style=' clear: both; text-align:center; position: relative;'>
-				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-				</a>
-			</div>
-		<![endif]-->
-		<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<link rel="stylesheet" media="screen" href="css/ie.css">
-		<![endif]-->
 	</head>
 	
 	<body class="" id="top">
@@ -78,29 +67,29 @@
 								<br />
 								<br />
 								<ul id="drop-nav">
-  <li><a href="#">Support</a></li>
-  <li><a href="#">Web Design</a>
-    <ul>
-      <li><a href="#">HTML</a></li>
-      <li><a href="#">CSS</a></li>
-      <li><a href="#">JavaScript</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Content Management</a>
-    <ul>
-      <li><a href="#">Joomla</a></li>
-      <li><a href="#">Drupal</a></li>
-      <li><a href="#">WordPress</a></li>
-      <li><a href="#">Concrete 5</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Contact</a>
-    <ul>
-      <li><a href="#">General Inquiries</a></li>
-      <li><a href="#">Ask me a Question</a></li>
-    </ul>
-  </li>
-</ul> 
+								  <li><a href="#">Support</a></li>
+								  <li><a href="#">Web Design</a>
+								    <ul>
+								      <li><a href="#">HTML</a></li>
+								      <li><a href="#">CSS</a></li>
+								      <li><a href="#">JavaScript</a></li>
+								    </ul>
+								  </li>
+								  <li><a href="#">Content Management</a>
+								    <ul>
+								      <li><a href="#">Joomla</a></li>
+								      <li><a href="#">Drupal</a></li>
+								      <li><a href="#">WordPress</a></li>
+								      <li><a href="#">Concrete 5</a></li>
+								    </ul>
+								  </li>
+								  <li><a href="#">Contact</a>
+								    <ul>
+								      <li><a href="#">General Inquiries</a></li>
+								      <li><a href="#">Ask me a Question</a></li>
+								    </ul>
+								  </li>
+								</ul> 
 						</h1>
 						
 					</div>
